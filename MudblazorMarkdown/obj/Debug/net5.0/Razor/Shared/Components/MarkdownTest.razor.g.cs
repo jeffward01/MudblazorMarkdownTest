@@ -211,8 +211,7 @@ using System.IO;
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(24, "\r\n            ");
                         __builder4.OpenElement(25, "span");
-                        __builder4.AddAttribute(26, "b-zx7e35zs93");
-                        __builder4.AddContent(27, 
+                        __builder4.AddContent(26, 
 #nullable restore
 #line 17 "C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\Shared\Components\MarkdownTest.razor"
                     this._markupString

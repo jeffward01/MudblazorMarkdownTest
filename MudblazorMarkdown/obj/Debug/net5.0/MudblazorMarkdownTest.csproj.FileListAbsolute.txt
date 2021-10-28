@@ -58,9 +58,7 @@ C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\ne
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\MudblazorMarkdownTest.RazorAssemblyInfo.cs
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\staticwebassets\MudblazorMarkdownTest.StaticWebAssets.Manifest.cache
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\staticwebassets\MudblazorMarkdownTest.StaticWebAssets.xml
-C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\scopedcss\Shared\Components\MarkdownTest.razor.rz.scp.css
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\scopedcss\bundle\MudblazorMarkdownTest.styles.css
-C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\scopedcss\projectbundle\MudblazorMarkdownTest.bundle.scp.css
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\MudblazorMarkdownTest.RazorTargetAssemblyInfo.cache
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\MudblazorMarkdownTest.RazorTargetAssemblyInfo.cs
 C:\Dev\Aeonic\AeonicTech\Questions\BlazorMarkdown\MudblazorMarkdown\obj\Debug\net5.0\MudblazorMarkdownTest.Views.pdb
