@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Markdig/0.26.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        }
+      },
+      "WebStoating.Markdig.Prism/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Markdig": "0.22.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Markdig.Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Markdig.Prism.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Markdig/0.26.0": {
+      "sha512": "9+V9emMb+/rzzuwbNldmIUK6YTYU7hP4Fw1QxH2ht1N0Pr33TJobayzXM6/cBCILV1nhhOxzNGdISj85v2OBcQ==",
+      "type": "package",
+      "path": "markdig/0.26.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Markdig.dll",
+        "lib/net452/Markdig.xml",
+        "lib/netcoreapp2.1/Markdig.dll",
+        "lib/netcoreapp2.1/Markdig.xml",
+        "lib/netcoreapp3.1/Markdig.dll",
+        "lib/netcoreapp3.1/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.26.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png"
+      ]
+    },
+    "WebStoating.Markdig.Prism/1.0.0": {
+      "sha512": "Yyw4/fuqVEEIqjCGbRfowLAQ1pMZwuOU7s3FMg/J48LaJDW55pJfvBoKaeQTKSjQwWOFZonHu+VWSvd6RC0zVA==",
+      "type": "package",
+      "path": "webstoating.markdig.prism/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Markdig.Prism.dll",
+        "webstoating.markdig.prism.1.0.0.nupkg.sha512",
+        "webstoating.markdig.prism.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Markdig >= 0.26.0",
+      "WebStoating.Markdig.Prism >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Jeff-Office-PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Dev\\Aeonic\\AeonicTech\\Questions\\BlazorMarkdown\\VanillaBlazorMarkdown\\VanillaBlazorMarkdownTest\\VanillaBlazorMarkdownTest.csproj",
+      "projectName": "VanillaBlazorMarkdownTest",
+      "projectPath": "C:\\Dev\\Aeonic\\AeonicTech\\Questions\\BlazorMarkdown\\VanillaBlazorMarkdown\\VanillaBlazorMarkdownTest\\VanillaBlazorMarkdownTest.csproj",
+      "packagesPath": "C:\\Users\\Jeff-Office-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Aeonic\\AeonicTech\\Questions\\BlazorMarkdown\\VanillaBlazorMarkdown\\VanillaBlazorMarkdownTest\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Jeff-Office-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/Aeonic-Tech/_packaging/Aeonic-Tech-Nuget/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Markdig": {
+            "target": "Package",
+            "version": "[0.26.0, )"
+          },
+          "WebStoating.Markdig.Prism": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

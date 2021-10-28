@@ -1,0 +1,72 @@
+﻿@using Markdig
+@using Markdig.Prism
+@using System.IO
+
+
+ 
+ 
+         
+<h3>@(this.Title)</h3>
+   
+<h6>@GetFileName()</h6>
+<span>@(this._markupString)</span>
+
+
+@code {
+
+    [Parameter]
+    public string Title { get; set; } = "";
+
+    [Parameter]
+    public string ClassFileName { get; set; } = "";
+    /// <summary>
+    ///     Gets or sets the path to the Markdown file.
+    /// </summary>
+    [Parameter]
+    public string FileName { get; set; }
+
+    private MarkupString _markupString = new();
+
+    public string GetFileName()
+    {
+        if (string.IsNullOrWhiteSpace(this.ClassFileName))
+        {
+            return string.Empty;
+        }
+
+        return this.ClassFileName;
+    }
+
+    /// <summary>
+    ///     Gets the <see cref="MarkdownPipeline" /> to use.
+    /// </summary>
+    protected virtual MarkdownPipeline Pipeline => new MarkdownPipelineBuilder().UseEmojiAndSmiley()
+        .UseAdvancedExtensions()
+        .UsePrism()
+        .Build();
+
+    /// <inheritdoc />
+    /// <inheritdoc />
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        DirectoryInfo binDirectory = new DirectoryInfo(this._getBin());
+        var testMarkdownFile = binDirectory.GetFiles(this.FileName, SearchOption.AllDirectories).First();
+
+
+        var markdown = File.ReadAllText(testMarkdownFile.FullName);
+        var stringOfHtml = Markdown.ToHtml(markdown, this.Pipeline);
+        this._markupString = new MarkupString(stringOfHtml);
+
+        Console.WriteLine($"This is the markdown printed to the UI: \n \n{this._markupString}");
+    }
+
+
+    private string _getBin()
+    {
+        var path = System.IO.Path.GetDirectoryName(
+            System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+        var binPath = path.Substring(6);
+        return binPath;
+    }
+}
